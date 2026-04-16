@@ -1,0 +1,30 @@
+Build a real-time multiplayer trivia game. One person creates a room, picks a topic, others join via a code or link, and the game runs live with synced questions and a live leaderboard.
+Core functionality:
+
+Host flow: enter topic (e.g., "90s movies," "our engineering team," "Taylor Swift lore"), number of rounds, seconds per question. Get a room code + shareable link.
+Player flow: enter code or click link, pick a name/avatar, wait in lobby
+Lobby shows joined players in real time with their avatars
+Host starts game → synced questions appear for everyone simultaneously
+Players tap answers; points awarded for correctness + speed
+After each question: show correct answer, point changes, current leaderboard
+Final screen: winner celebrated, full leaderboard, option to play again with same players
+LLM generates questions based on the topic (4 multiple choice, 1 correct)
+
+Design direction:
+High-energy, playful, and unapologetically loud. This is the opposite of the habit tracker. Think Jackbox Games meets a modern design system.
+
+Dark mode only — saturated, not flat black. Base: deep purple or midnight navy (#1A0B2E or #0F0F3D)
+Vibrant accent colors for gameplay: electric yellow for "your answer," hot pink for "correct," cyan for leaderboard highlights. These should feel like neon, not pastel.
+Bold, heavy display font for questions and screens (something like Space Grotesk Bold, Clash Display, or similar). Sans-serif for body.
+Question text is MASSIVE — fills the screen, impossible to miss
+Answer buttons are huge, tappable, differentiated by color (the classic 4-color quadrant works if executed well)
+Timer is a prominent visual element — a shrinking bar across the top, color-shifts to red in final seconds
+Leaderboard animations: positions actually animate when they swap, don't just snap
+Sound effects are expected here (correct ding, wrong buzz, countdown tick) — keep them short and good
+Avatars: use a small set of fun generated shapes/characters, not generic initials
+
+Technical notes:
+
+Real-time sync via WebSockets (or Replit's real-time DB)
+Host device controls pacing; all players see the same state
+Works on mobile (most players will be on phones)
