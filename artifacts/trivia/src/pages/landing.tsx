@@ -30,11 +30,7 @@ export default function Landing() {
           <br />
           BLITZ
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground font-mono mb-12 uppercase tracking-widest">
-          High-voltage knowledge
-        </p>
-
-        <div className="flex flex-col gap-6 w-full max-w-sm mx-auto">
+        <div className="flex flex-col gap-6 w-full max-w-sm mx-auto mt-12">
           <Button
             size="lg"
             className="w-full text-xl h-16 font-bold bg-primary hover:bg-primary/90 text-primary-foreground neo-shadow neo-shadow-hover active:neo-shadow-active transition-all"
