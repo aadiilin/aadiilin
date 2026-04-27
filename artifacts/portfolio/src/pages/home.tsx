@@ -108,7 +108,7 @@ export function Home() {
               transition={{ duration: 0.8, delay: i % 2 === 0 ? 0 : 0.2 }}
               className={`group flex flex-col ${i % 2 !== 0 ? 'md:mt-32' : ''}`}
             >
-              <Link href={`/work/${project.slug}`} className="block overflow-hidden relative aspect-[4/3] mb-6 cursor-pointer">
+              <Link href={`/work/${project.slug}`} className="block overflow-hidden relative aspect-[3/4] mb-6 cursor-pointer">
                 <div className="absolute inset-0 bg-black/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <span className="text-white border border-white/30 rounded-full px-6 py-3 backdrop-blur-sm flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     View Case Study <ArrowRight size={16} />
