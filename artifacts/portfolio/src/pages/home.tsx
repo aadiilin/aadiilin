@@ -153,7 +153,7 @@ export function Home() {
         <div className="px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
             <div className="lg:col-span-5 relative aspect-[3/4]">
-              <img src={`${import.meta.env.BASE_URL}images/adil-portrait.jpeg`} alt="Adil Sarvadka" className="w-full h-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}images/adil-portrait.png`} alt="Adil Sarvadka" className="w-full h-full object-contain" />
             </div>
             
             <div className="lg:col-span-7">
