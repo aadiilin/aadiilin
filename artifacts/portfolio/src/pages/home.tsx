@@ -8,12 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 
 const PROJECTS = [
   {
-    slug: "editorial-archive",
-    title: "The Editorial Archive",
-    role: "Art Direction & Design",
-    year: "2023",
-    description: "A comprehensive digital archive for a leading fashion publication, translating print typography into a fluid web experience.",
-    image: `${import.meta.env.BASE_URL}images/project-1.png`
+    slug: "imbizo",
+    title: "IMBIZO 1.0",
+    role: "Poster & Identity",
+    year: "2025",
+    description: "Poster and identity for IMBIZO 1.0, an arts fest hosted by Baithul Izza celebrating freedom of survival and existence through bold typography and modular geometric motifs.",
+    image: `${import.meta.env.BASE_URL}images/imbizo.jpeg`
   },
   {
     slug: "atelier-stationery",
