@@ -16,28 +16,44 @@ const PROJECTS = [
     image: `${import.meta.env.BASE_URL}images/imbizo.jpeg`
   },
   {
-    slug: "atelier-stationery",
-    title: "Atelier Identity",
-    role: "Brand Identity",
-    year: "2023",
-    description: "Complete visual identity and physical collateral for an architectural firm based in Copenhagen.",
-    image: `${import.meta.env.BASE_URL}images/project-2.png`
+    slug: "an-nur",
+    title: "An-Nur Fifteen Hundred",
+    role: "Campaign Design",
+    year: "2025",
+    description: "Commemorative campaign poster for An-Nur 1500, marking the 1500th Mawlid al-Nabi with elegant typography, devotional motifs, and architectural photography.",
+    image: `${import.meta.env.BASE_URL}images/annur.jpeg`
   },
   {
-    slug: "nexus-app",
-    title: "Nexus Platform",
-    role: "Product Design",
-    year: "2022",
-    description: "A dark-mode first financial analytics platform designed for high-frequency trading firms.",
-    image: `${import.meta.env.BASE_URL}images/project-3.png`
+    slug: "hijra",
+    title: "Hijra Talk Series",
+    role: "Event Identity",
+    year: "2025",
+    description: "Identity and announcement layout for the Hijra Talk Series under the Muharram campaign, blending modern type with calligraphic accents.",
+    image: `${import.meta.env.BASE_URL}images/hijra.jpeg`
   },
   {
-    slug: "aura-botanicals",
-    title: "Aura Botanicals",
-    role: "Packaging & Brand",
-    year: "2022",
-    description: "Sustainable packaging design and visual system for an organic skincare line.",
-    image: `${import.meta.env.BASE_URL}images/project-4.png`
+    slug: "keam-2025",
+    title: "KEAM 2025 Results",
+    role: "Editorial Layout",
+    year: "2025",
+    description: "Results announcement design for Science Orbit at Baithul Izza, celebrating top KEAM ranks with bold portraits and a structured grid.",
+    image: `${import.meta.env.BASE_URL}images/keam.jpeg`
+  },
+  {
+    slug: "enroute",
+    title: "Enroute",
+    role: "Travel Campaign",
+    year: "2024",
+    description: "Visual campaign for Enroute, a Kerala–Karnataka–Tamil Nadu trip, mixing photography with map UI elements and editorial typography.",
+    image: `${import.meta.env.BASE_URL}images/enroute.jpeg`
+  },
+  {
+    slug: "guest-welcome",
+    title: "Hearty Welcomes",
+    role: "Event Poster",
+    year: "2024",
+    description: "Chief guest welcome poster for the Kashmiri Sadath Uroos Mubarak & Milad Sangamam, designed with warm earthy tones and layered typography.",
+    image: `${import.meta.env.BASE_URL}images/guest.jpeg`
   }
 ];
 
