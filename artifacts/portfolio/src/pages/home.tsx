@@ -92,27 +92,38 @@ export function Home() {
           aria-hidden="true"
         />
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative z-10 text-center max-w-6xl"
-        >
-          <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[14rem] leading-[0.95] tracking-tight mb-6 bg-gradient-to-r from-gray-300 via-gray-700 to-black bg-clip-text text-transparent">
+        <div className="relative z-10 text-center max-w-6xl">
+          <motion.h1
+            initial={{ clipPath: "inset(0 100% 0 0)" }}
+            animate={{ clipPath: "inset(0 0% 0 0)" }}
+            transition={{ duration: 1.4, delay: 0.9, ease: [0.76, 0, 0.24, 1] }}
+            className="font-serif font-bold text-7xl md:text-9xl lg:text-[14rem] leading-[0.95] tracking-tight mb-6 bg-gradient-to-r from-gray-300 via-gray-700 to-black bg-clip-text text-transparent"
+          >
             aadiilin
-          </h1>
-          <p className="font-serif text-base md:text-xl tracking-[0.35em] uppercase text-gray-700">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2, ease: [0.16, 1, 0.3, 1] }}
+            className="font-serif text-base md:text-xl tracking-[0.35em] uppercase text-gray-700"
+          >
             Freelance Graphic Designer
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </section>
 
       {/* Work Showcase */}
       <section id="work" className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
-        <div className="mb-16 md:mb-24 flex items-baseline justify-between border-b border-border pb-6">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-16 md:mb-24 flex items-baseline justify-between border-b border-border pb-6"
+        >
           <h2 className="font-serif text-3xl md:text-5xl">Selected Works</h2>
-          <span className="text-sm uppercase tracking-widest text-muted-foreground">(04)</span>
-        </div>
+          <span className="text-sm uppercase tracking-widest text-muted-foreground">(06)</span>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-16 md:gap-y-32">
           {PROJECTS.map((project, i) => (
@@ -133,7 +144,7 @@ export function Home() {
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
                 />
               </Link>
               <div className="flex justify-between items-start">
@@ -156,7 +167,13 @@ export function Home() {
               <img src={`${import.meta.env.BASE_URL}images/adil-portrait.png`} alt="Adil Sarvadka" className="w-full h-full object-contain" />
             </div>
             
-            <div className="lg:col-span-7">
+            <motion.div
+              className="lg:col-span-7"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            >
               <h2 className="font-serif text-4xl md:text-6xl mb-8">A relentless pursuit of the intentional.</h2>
               <div className="space-y-6 text-lg md:text-xl font-light text-background/80 leading-relaxed">
                 <p>
@@ -189,7 +206,7 @@ export function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -197,10 +214,17 @@ export function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-7xl mb-6 text-center">Let's create something memorable.</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
-            Currently accepting select projects. Reach out to discuss how we can collaborate.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <h2 className="font-serif text-4xl md:text-7xl mb-6 text-center">Let's create something memorable.</h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
+              Currently accepting select projects. Reach out to discuss how we can collaborate.
+            </p>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-center md:text-left">
             <div className="space-y-2">

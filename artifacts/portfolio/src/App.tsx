@@ -28,19 +28,28 @@ function Router() {
   const [location] = useLocation();
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <motion.div
-        key={location}
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -16 }}
-        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-      >
-        <Switch location={location}>
-          <Route path="/" component={Home} />
-          <Route path="/work/:slug" component={CaseStudy} />
-          <Route component={NotFound} />
-        </Switch>
-      </motion.div>
+      <div key={location} className="relative">
+        {/* Curtain wipe overlay */}
+        <motion.div
+          className="fixed inset-0 bg-black z-[100] origin-top pointer-events-none"
+          initial={{ scaleY: 1 }}
+          animate={{ scaleY: 0 }}
+          exit={{ scaleY: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.35, delay: 0.4 }}
+        >
+          <Switch location={location}>
+            <Route path="/" component={Home} />
+            <Route path="/work/:slug" component={CaseStudy} />
+            <Route component={NotFound} />
+          </Switch>
+        </motion.div>
+      </div>
     </AnimatePresence>
   );
 }
