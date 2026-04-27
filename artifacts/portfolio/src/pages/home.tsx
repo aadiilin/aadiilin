@@ -68,7 +68,7 @@ export function Home() {
           <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[12rem] leading-[0.95] tracking-tight mb-6">
             aadiilin
           </h1>
-          <p className="text-xl md:text-2xl text-white max-w-2xl font-light leading-relaxed">
+          <p className="font-serif text-xl md:text-2xl text-white max-w-2xl font-light leading-relaxed">
             Adil Sarvadka|Media production & graphic designer
           </p>
         </motion.div>
