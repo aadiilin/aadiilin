@@ -49,6 +49,14 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a, button {
+  transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease, transform 300ms ease, border-color 300ms ease;
+}
+
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
