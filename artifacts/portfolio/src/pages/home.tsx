@@ -65,8 +65,8 @@ export function Home() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl z-10"
         >
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-6">
-           aadiilin
+          <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[12rem] leading-[0.95] tracking-tight mb-6">
+            aadiilin
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light leading-relaxed">
             Adil Sarvadka|Media production & graphic designer
