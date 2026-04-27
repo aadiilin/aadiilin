@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "czar48CJKzsH_kqTv7Zxv"
+uri = "file://artifacts/portfolio/public/images/avatar.png"
+type = "image"
+title = "Moody portrait of creative designer"
+
+[[generated]]
+id = "v5RavKfF81m8klVBpT84R"
+uri = "file://artifacts/portfolio/public/images/project-1.png"
+type = "image"
+title = "Editorial magazine layout mockup"
+
+[[generated]]
+id = "M6cKlj3vzN7XbZHGArDV0"
+uri = "file://artifacts/portfolio/public/images/project-2.png"
+type = "image"
+title = "Architectural branding stationery mockup"
+
+[[generated]]
+id = "Kkoy2LHooNzUsUYmx6Nj5"
+uri = "file://artifacts/portfolio/public/images/project-3.png"
+type = "image"
+title = "Cinematic web app interface mockup"
+
+[[generated]]
+id = "sELLCQJ7rEGyujOt6Dn-X"
+uri = "file://artifacts/portfolio/public/images/project-4.png"
+type = "image"
+title = "Minimalist skincare packaging design"
+
+[[generated]]
+id = "pPe0cidgfp8q9NaMRhq9M"
+uri = "file://artifacts/portfolio/public/images/project-1-hero.png"
+type = "image"
+title = "Editorial spread detail wide shot"
