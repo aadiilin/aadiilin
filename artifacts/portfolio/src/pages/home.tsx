@@ -65,7 +65,7 @@ export function Home() {
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full p-6 md:p-10 z-50 mix-blend-difference text-white flex justify-between items-center pointer-events-none">
-        <Link href="/" className="font-serif text-xl tracking-tight pointer-events-auto">A. Rivera</Link>
+        <Link href="/" className="font-serif text-xl tracking-tight pointer-events-auto">Adil.S</Link>
         <div className="flex gap-6 text-sm font-medium tracking-wide uppercase pointer-events-auto">
           <a href="#work" className="hover:opacity-70 transition-opacity">Work</a>
           <a href="#about" className="hover:opacity-70 transition-opacity">About</a>
@@ -254,7 +254,7 @@ export function Home() {
 
       {/* Footer */}
       <footer className="py-12 px-6 md:px-12 lg:px-24 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="font-serif text-2xl italic">Alex Rivera</div>
+        <div className="font-serif text-2xl italic">Adil.S</div>
         <div className="flex gap-6">
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Instagram size={20} /></a>
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Twitter size={20} /></a>
