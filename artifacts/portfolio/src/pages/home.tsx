@@ -65,11 +65,10 @@ export function Home() {
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl z-10"
         >
-          <h1 className="font-serif font-bold tex9-7xl md:text-9xl lg:text-[12rem] leading-[0.95] tracking-tight mb-6">
+          <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[12rem] leading-[0.95] tracking-tight mb-6">
             aadiilin
           </h1>
-          <p className="text-xl md:text-2xl teplayfair colour;white display;Italicax 
-            ight leading-relaxed">
+          <p className="text-xl md:text-2xl text-white max-w-2xl font-light leading-relaxed">
             Adil Sarvadka|Media production & graphic designer
           </p>
         </motion.div>
