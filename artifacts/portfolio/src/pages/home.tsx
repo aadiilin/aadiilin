@@ -198,9 +198,28 @@ export function Home() {
       <section id="contact" className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-4xl md:text-7xl mb-6 text-center">Let's create something memorable.</h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-lg mx-auto">
-            Currently accepting select projects for Q4 2024. Reach out to discuss how we can collaborate.
+          <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
+            Currently accepting select projects. Reach out to discuss how we can collaborate.
           </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-center md:text-left">
+            <div className="space-y-2">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">Email</div>
+              <a href="mailto:adilsarvadka@gmail.com" className="block text-base md:text-lg hover:text-primary transition-colors break-all">
+                adilsarvadka@gmail.com
+              </a>
+            </div>
+            <div className="space-y-2">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">Phone</div>
+              <a href="tel:+918137802554" className="block text-base md:text-lg hover:text-primary transition-colors">
+                +91 81378 02554
+              </a>
+            </div>
+            <div className="space-y-2">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground">Address</div>
+              <p className="text-base md:text-lg">Calicut, Kerala, India — 673583</p>
+            </div>
+          </div>
 
           <form 
             className="space-y-8"
