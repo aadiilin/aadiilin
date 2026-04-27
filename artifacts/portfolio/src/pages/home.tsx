@@ -58,27 +58,36 @@ export function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col justify-end p-6 md:p-12 lg:p-24 pt-32">
-        <motion.div 
+      <section className="relative h-screen flex flex-col justify-center items-center bg-white text-black overflow-hidden px-6">
+        {/* Decorative abstract loops */}
+        <motion.div
+          style={{ y }}
+          className="absolute -top-20 -left-20 w-[420px] h-[420px] rounded-full border-[40px] border-black/80 blur-sm opacity-90"
+          aria-hidden="true"
+        />
+        <motion.div
+          style={{ y }}
+          className="absolute -bottom-32 -right-24 w-[480px] h-[480px] rounded-full border-[50px] border-black/80 blur-sm opacity-90"
+          aria-hidden="true"
+        />
+        <motion.div
+          style={{ y }}
+          className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full border-[14px] border-black/60 blur-[2px] opacity-70"
+          aria-hidden="true"
+        />
+
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-4xl z-10"
+          className="relative z-10 text-center max-w-6xl"
         >
-          <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[12rem] leading-[0.95] tracking-tight mb-6">
+          <h1 className="font-serif font-bold text-7xl md:text-9xl lg:text-[14rem] leading-[0.95] tracking-tight mb-6 bg-gradient-to-r from-gray-300 via-gray-700 to-black bg-clip-text text-transparent">
             aadiilin
           </h1>
-          <p className="font-serif text-xl md:text-2xl text-white max-w-2xl font-light leading-relaxed">
-            Adil Sarvadka|Media production & graphic designer
+          <p className="font-serif text-base md:text-xl tracking-[0.35em] uppercase text-gray-700">
+            Freelance Graphic Designer
           </p>
-        </motion.div>
-        
-        {/* Abstract shape/image in background */}
-        <motion.div 
-          style={{ y }}
-          className="absolute top-1/4 right-10 w-1/2 md:w-1/3 aspect-[3/4] opacity-20 md:opacity-40"
-        >
-          <img src={`${import.meta.env.BASE_URL}images/avatar.png`} alt="Alex Rivera" className="w-full h-full object-cover object-center filter grayscale contrast-125" />
         </motion.div>
       </section>
 
