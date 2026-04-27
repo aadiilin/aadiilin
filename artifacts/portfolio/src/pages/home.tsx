@@ -160,10 +160,10 @@ export function Home() {
               <h2 className="font-serif text-4xl md:text-6xl mb-8">A relentless pursuit of the intentional.</h2>
               <div className="space-y-6 text-lg md:text-xl font-light text-background/80 leading-relaxed">
                 <p>
-                  I believe the best digital experiences don't feel like software—they feel like environments. My approach is rooted in traditional editorial design and brutalist architecture, brought to life through modern web technologies.
+                  Focused on the intersection of media and technology, I am a multi-disciplinary creator dedicated to bridging the gap between artistic vision and technical execution. With a background in professional photography, videography, and brand identity design, I specialize in crafting cohesive visual stories that resonate in today's digital landscape.
                 </p>
                 <p>
-                  Over the past decade, I've partnered with visionary founders, fashion houses, and cultural institutions to build brands and digital products that refuse to be ignored.
+                  As I transition into the role of a Techno-Manager, my approach combines a passion for precise, high-end production with a structured, project-oriented mindset, ensuring that every concept is not just captured, but strategically built for impact.
                 </p>
               </div>
 
