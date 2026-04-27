@@ -66,10 +66,10 @@ export function Home() {
           className="max-w-4xl z-10"
         >
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-6">
-            Designing digital spaces with <span className="italic text-primary">tactile warmth</span> & editorial precision.
+           aadiilin
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl font-light leading-relaxed">
-            Alex Rivera is a multidisciplinary creative director bridging the gap between brand identity and product design.
+            Adil Sarvadka|Media production & graphic designer
           </p>
         </motion.div>
         
