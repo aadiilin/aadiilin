@@ -1,0 +1,232 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-secondary-border: var(--secondary-border);
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted-border: var(--muted-border);
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent-border: var(--accent-border);
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-destructive-border: var(--destructive-border);
+
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+  --font-mono: var(--app-font-mono);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, button {
+  transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease, transform 300ms ease, border-color 300ms ease;
+}
+
+:root {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+
+  /* Black background, yellow type */
+  --background: 0 0% 5%;
+  --foreground: 50 100% 55%;
+
+  --border: 50 60% 22%;
+  --input: 50 60% 22%;
+  --ring: 50 100% 55%;
+
+  --card: 0 0% 8%;
+  --card-foreground: 50 100% 55%;
+  --card-border: 50 60% 22%;
+
+  --sidebar: 0 0% 6%;
+  --sidebar-foreground: 50 100% 55%;
+  --sidebar-border: 50 60% 22%;
+  --sidebar-primary: 50 100% 55%;
+  --sidebar-primary-foreground: 0 0% 5%;
+  --sidebar-accent: 0 0% 12%;
+  --sidebar-accent-foreground: 50 100% 55%;
+  --sidebar-ring: 50 100% 55%;
+
+  --popover: 0 0% 8%;
+  --popover-foreground: 50 100% 55%;
+  --popover-border: 50 60% 22%;
+
+  --primary: 50 100% 55%;
+  --primary-foreground: 0 0% 5%;
+
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 50 100% 55%;
+
+  --muted: 0 0% 12%;
+  --muted-foreground: 50 40% 65%;
+
+  --accent: 50 100% 55%;
+  --accent-foreground: 0 0% 5%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --app-font-sans: 'Inter', sans-serif;
+  --app-font-serif: 'Nohemi', 'Bricolage Grotesque', 'Inter', sans-serif;
+  --app-font-mono: 'Space Mono', Menlo, monospace;
+  
+  --radius: 0rem;
+  
+  --font-title: 'Syne', sans-serif;
+  
+  --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.02);
+  --shadow-xs: 0px 2px 0px 0px rgba(0,0,0,0.03);
+  --shadow-sm: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 1px 2px -1px rgba(0,0,0,0.03);
+  --shadow: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 1px 2px -1px rgba(0,0,0,0.03);
+  --shadow-md: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 2px 4px -1px rgba(0,0,0,0.04);
+  --shadow-lg: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 4px 6px -1px rgba(0,0,0,0.05);
+  --shadow-xl: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 8px 10px -1px rgba(0,0,0,0.06);
+  --shadow-2xl: 0px 2px 0px 0px rgba(0,0,0,0.08);
+
+  /* Glassmorphism & Glossy variables */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.12);
+  --glass-blur: 8px; /* Reduced further from 12px */
+  
+  --shadow-glossy-lg: 
+    0 10px 20px -5px rgba(0, 0, 0, 0.5); /* Simplified shadow, removed inset for performance */
+    
+  --shadow-glossy-sm:
+    0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+  --shadow-inset-glossy:
+    inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.glass {
+  background: rgba(10, 10, 10, 0.85); /* More opaque, no blur for better performance */
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glossy-lg);
+}
+
+.glass-card {
+  background: rgba(15, 15, 15, 0.9); /* Opaque background instead of backdrop-filter */
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glossy-lg);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: var(--glass-highlight);
+  transform: translateY(-2px);
+}
+
+.glossy-button {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glossy-sm);
+  transition: all 0.2s ease;
+}
+
+.glossy-button:active {
+  box-shadow: var(--shadow-inset-glossy);
+  transform: translateY(1px);
+}
+
+.recessed-input {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-inset-glossy);
+  border: 1px solid var(--glass-border);
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.dark {
+  --background: 0 0% 5%;
+  --foreground: 50 100% 55%;
+
+  --border: 50 60% 22%;
+  --input: 50 60% 22%;
+  --ring: 50 100% 55%;
+
+  --card: 0 0% 8%;
+  --card-foreground: 50 100% 55%;
+  --card-border: 50 60% 22%;
+
+  --sidebar: 0 0% 6%;
+  --sidebar-foreground: 50 100% 55%;
+  --sidebar-border: 50 60% 22%;
+  --sidebar-primary: 50 100% 55%;
+  --sidebar-primary-foreground: 0 0% 5%;
+  --sidebar-accent: 0 0% 12%;
+  --sidebar-accent-foreground: 50 100% 55%;
+  --sidebar-ring: 50 100% 55%;
+
+  --popover: 0 0% 8%;
+  --popover-foreground: 50 100% 55%;
+  --popover-border: 50 60% 22%;
+
+  --primary: 50 100% 55%;
+  --primary-foreground: 0 0% 5%;
+
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 50 100% 55%;
+
+  --muted: 0 0% 12%;
+  --muted-foreground: 50 40% 65%;
+
+  --accent: 50 100% 55%;
+  --accent-foreground: 0 0% 5%;
+
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 50 100% 55%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
