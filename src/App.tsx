@@ -3,8 +3,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Home } from "@/pages/home";
-import NotFound from "@/pages/not-found";
+{ label: "Work", href: "#work" },
+{ label: "Token of Love", href: "/token-of-love" },
+{ label: "About", href: "#about" },
+{ label: "Contact", href: "#contact" }
 import { useEffect } from "react";
 import Lenis from 'lenis';
 
